@@ -2,16 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import CadastroVideo from './pages/cadastro/Video';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
-function CadastroVideo(){
-  return(
-    <div>
-      Página de Cadastro de Video
-    </div>
-  )
-}
+
 
 const Pagina404 = () => (<div>Página 404</div>)
 ReactDOM.render(
