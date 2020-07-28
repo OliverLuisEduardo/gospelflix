@@ -16,7 +16,7 @@ const AppWrapper = styled.div`
     paddin-top: 0;
   }
 `;
-function App() {
+function Home() {
   return (
     <AppWrapper>
       <Menu />
@@ -57,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
