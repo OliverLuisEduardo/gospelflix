@@ -1,21 +1,21 @@
 import React from 'react';
 import Logo from '../../assets/img/Logo.png';
 import { LogoImage, MenuWrapper} from './style.js';
-//import './Menu.css'
+import {Link} from "react-router-dom"
 import Button from '../Button';
 
 function Menu() {
     return( 
         <MenuWrapper className="Menu">
-            <a href="/">                 
+            <Link to="/">                 
             <LogoImage src={Logo} alt="GospelFlix logo" />
-            </a>
+            </Link>
 
-            <Button as="a"  href="/">
+            <Button as={Link}  href="/cadastro/Video">
                 Novo Video
             </Button>               
         </MenuWrapper>
     );
 }
 
-export default Menu; //Exportando o menu
+export default Menu;
