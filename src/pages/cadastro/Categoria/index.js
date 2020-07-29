@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 
 function CadastroCategoria() {
+  const [nomeCategoria, setNomeCategoria] = useState('Pregações');
+  
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria</h1>
+      <h1>Cadastro de Categoria: {nomeCategoria}</h1>
 
       <form>
 
