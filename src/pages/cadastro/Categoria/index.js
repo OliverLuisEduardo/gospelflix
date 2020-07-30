@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -18,6 +19,20 @@ function CadastroCategoria() {
       [chave]: valor,
     })
   }
+
+  function handleChange(infoEvento) {
+    setValue(
+      infoEvento.target.getAttribute('name'),
+      infoEvento.target.value
+    );
+  }
+  /*function handleChange(infoEvento){
+    const { getAttribute,value} = infoEvento.target;
+    setValue (
+      infoEvento.target.getAttribute('name'),
+      value
+    );
+  }*/
   return (
 
     <PageDefault>
@@ -43,7 +58,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição:"
-          type="????"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
