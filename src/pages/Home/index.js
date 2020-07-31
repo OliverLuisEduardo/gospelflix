@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 import Menu from '../../components/Menu';
 import Footer from '../../components/Footer';
@@ -22,33 +22,33 @@ function Home() {
       <Menu />
 
       <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo[0]} 
+        videoTitle={dadosIniciais.categorias[0].videos[0].titulo[0]}
         url={dadosIniciais.categorias[0].videos[0].url[0]}
-        videoDescription={"Testando "}
-        />
+        videoDescription="Testando "
+      />
 
       <Carousel
         ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
       />
 
-      <Carousel        
+      <Carousel
         category={dadosIniciais.categorias[1]}
       />
 
-      <Carousel       
+      <Carousel
         category={dadosIniciais.categorias[2]}
       />
 
-      <Carousel        
+      <Carousel
         category={dadosIniciais.categorias[3]}
       />
 
-      <Carousel        
+      <Carousel
         category={dadosIniciais.categorias[4]}
       />
-      
-      <Carousel        
+
+      <Carousel
         category={dadosIniciais.categorias[5]}
       />
 

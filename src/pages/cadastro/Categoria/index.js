@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import PageDefault from '../../../components/PageDefault';
@@ -28,7 +28,7 @@ function CadastroCategoria() {
     );
   }
 
-  /* useEffect(() => {
+  useEffect(() => {
     if(window.location.href.includes('localhost')) {
       const URL = 'http://localhost:8080/categorias';
       fetch(URL)
@@ -41,7 +41,7 @@ function CadastroCategoria() {
         throw new Error('Não foi possível pegar os dados');
        })
     }
-  }, []); */
+  }, []); 
 
   return (
     <PageDefault>
