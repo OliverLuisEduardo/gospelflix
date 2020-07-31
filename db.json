@@ -30,5 +30,13 @@
         "descricao": "Estudos a fundo no cristianismo",
         "cor": "#FFFFFF"
     }
-    ]
-}
+    ],  
+    "videos": [
+        {
+          "id": 1,
+          "categoriaId": 1,
+          "titulo": "Vida com Deus",
+          "url": "https://www.youtube.com/watch?v=bVyeGPWjMDg&t=17s"
+        }
+      ]
+    }
