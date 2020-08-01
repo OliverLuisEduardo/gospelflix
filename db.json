@@ -4,31 +4,31 @@
         "id": 1,
         "titulo": "Semear",
         "descricao": "Videos da semear",
-        "cor": "#FFFFFF"
+        "cor": "#FFF000"
     },
     {
         "id": 2,
         "titulo": "Pregações",
         "descricao": "Algumas pregações",
-        "cor": "#FFFFFF"
+        "cor": "#00C86F"
     },
     {
         "id": 3,
         "titulo": "Mensagens rapidas",
         "descricao": "Pra ouvir no tempo apertado",
-        "cor": "#FFFFFF"
+        "cor": "#6BD1FF"
     },
     {
         "id": 4,
         "titulo": "Testemunhos",
         "descricao": "Pra somar",
-        "cor": "#FFFFFF"
+        "cor": "##ffd27f"
     },
     {
         "id": 5,
         "titulo": "Estudos",
         "descricao": "Estudos a fundo no cristianismo",
-        "cor": "#FFFFFF"
+        "cor": "#40e0d0"
     }
     ],  
     "videos": [
