@@ -10,16 +10,17 @@ function useForm(valoresIniciais) {
     });
   }
 
-  function handleChange(infoEvento) {
+  function handleChange(infosDoEvento) {
     setValue(
-      infoEvento.target.getAttribute('name'),
-      infoEvento.target.value,
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
     );
   }
 
   function clearForm() {
     setValues(valoresIniciais);
   }
+
   return {
     values,
     handleChange,
