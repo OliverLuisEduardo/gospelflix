@@ -1,29 +1,33 @@
-import React from 'react';
-import styled from 'styled-components';
-
-import Menu from '../../components/Menu';
-import Footer from '../../components/Footer';
+/* eslint-disable no-console */
+import React, { useEffect, useState } from 'react';
+// import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
+import PageDefault from '../../components/PageDefault';
+import categoriasRepository from '../../repositories/categorias';
 
-import dadosIniciais from '../../data/dados_iniciais.json';
 
-const AppWrapper = styled.div`
-  background: var(--grayDark);
-  padding-top: 94px;
-
-  @media (max-width: 800px) {
-    paddin-top: 0;
-  }
-`;
 function Home() {
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+
+  useEffect(() => {
+    // http://localhost:8080/categorias?_embed=videos
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        console.log(categoriasComVideos[0].videos[0]);
+        setDadosIniciais(categoriasComVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
   return (
     <AppWrapper>
       <Menu />
 
       <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo[0]}
-        url={dadosIniciais.categorias[0].videos[0].url[0]}
+        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+        url={dadosIniciais.categorias[0].videos[0].url}
         videoDescription="Testando "
       />
 
