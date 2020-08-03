@@ -2,31 +2,31 @@
     "categorias": [
     {
         "id": 1,
-        "titulo": "Semear",
+        "nome": "Semear",
         "descricao": "Videos da semear",
         "cor": "#FFF000"
     },
     {
         "id": 2,
-        "titulo": "Pregações",
+        "nome": "Pregações",
         "descricao": "Algumas pregações",
         "cor": "#00C86F"
     },
     {
         "id": 3,
-        "titulo": "Mensagens rapidas",
+        "nome": "Mensagens rapidas",
         "descricao": "Pra ouvir no tempo apertado",
         "cor": "#6BD1FF"
     },
     {
         "id": 4,
-        "titulo": "Testemunhos",
+        "nome": "Testemunhos",
         "descricao": "Pra somar",
         "cor": "##ffd27f"
     },
     {
         "id": 5,
-        "titulo": "Estudos",
+        "nome": "Estudos",
         "descricao": "Estudos a fundo no cristianismo",
         "cor": "#40e0d0"
     }

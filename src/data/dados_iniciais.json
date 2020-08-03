@@ -1,7 +1,7 @@
 {
     "categorias": [
         {
-            "titulo": "Semear",
+            "nome": "Semear",
             "link": "https://www.youtube.com/watch?v=bVyeGPWjMDg&t=17s",
             "cor": "#6BD1FF",
             "link_extra": {

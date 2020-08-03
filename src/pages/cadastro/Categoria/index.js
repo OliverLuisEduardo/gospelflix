@@ -7,7 +7,7 @@ import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    titulo: '',
+    nome: '',
     descricao: '',
     cor: '',
   };
@@ -32,7 +32,7 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {values.titulo}
+        {values.nome}
       </h1>
 
       <form onSubmit={function handleSubmit(infoEvento) {
@@ -47,10 +47,10 @@ function CadastroCategoria() {
       >
 
         <FormField
-          label="Titulo da Categoria"
+          label="Nome da Categoria"
           type="text"
-          name="titulo"
-          value={values.titulo}
+          name="nome"
+          value={values.nome}
           onChange={handleChange}
         />
 
@@ -74,7 +74,9 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
-
+      <br />
+      <br />
+      <br />
       {categorias.length === 0 && (
         <div>
           {}
@@ -84,13 +86,14 @@ function CadastroCategoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
+          <li key={`${categoria.nome}`}>
+            {categoria.nome}
           </li>
         ))}
       </ul>
 
       <Link to="/">
+        {' '}
         Ir para home
       </Link>
     </PageDefault>

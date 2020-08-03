@@ -59,7 +59,6 @@ ContentAreaContainer.Title = styled.h2`
   }
 `;
 
-
 export const WatchButton = styled.button`
   background-color: var(--white);
   border: 0;
