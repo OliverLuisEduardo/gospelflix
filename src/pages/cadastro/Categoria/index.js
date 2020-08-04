@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import PageDefault from '../../../components/PageDefault';
 import Button from '../../../components/Button';
@@ -91,12 +90,6 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Link to="/">
-        {' '}
-        Ir para home
-      </Link>
-      <br />
-      <br />
     </PageDefault>
   );
 }

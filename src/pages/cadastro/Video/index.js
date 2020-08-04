@@ -14,7 +14,7 @@ function CadastroVideo() {
   const { handleChange, values } = useForm({
     titulo: 'Video padrão',
     url: 'https://www.youtube.com/watch?v=jOAU81jdi-c',
-    categoria: 'Front End',
+    categoria: 'Pregações',
   });
 
   useEffect(() => {
@@ -31,11 +31,7 @@ function CadastroVideo() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
-        // alert('Video Cadastrado com sucesso!!!1!');
-
-        const categoriaEscolhida = categorias.find((categoria) => {
-          return categoria.titulo === values.categoria;
-        });
+        const categoriaEscolhida = categorias.find((categoria) => categoria.titulo === values.categoria);
 
         videosRepository.create({
           titulo: values.titulo,
@@ -77,10 +73,9 @@ function CadastroVideo() {
 
       <br />
       <br />
-
-      <Link to="/cadastro/categoria">
+      <Button as={Link} className="ButtonLink" to="/cadastro/categoria">
         Cadastrar Categoria
-      </Link>
+      </Button>
     </PageDefault>
   );
 }
