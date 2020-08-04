@@ -13,13 +13,15 @@ function CadastroCategoria() {
   };
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL_CONST = window.location.hostname.includes('localhost')
+    const URL_TOP = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
       : 'https://gospelflix.herokuapp.com/categorias';
-    fetch(URL_CONST)
+
+    fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
         const resposta = await respostaDoServidor.json();
         setCategorias([
@@ -35,8 +37,8 @@ function CadastroCategoria() {
         {values.nome}
       </h1>
 
-      <form onSubmit={function handleSubmit(infoEvento) {
-        infoEvento.preventDefault();
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
         setCategorias([
           ...categorias,
           values,
@@ -73,11 +75,10 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
-      <br />
 
       {categorias.length === 0 && (
         <div>
-          {}
+          {/* Cargando... */}
           Loading...
         </div>
       )}
@@ -93,7 +94,6 @@ function CadastroCategoria() {
       <Link to="/">
         Ir para home
       </Link>
-
     </PageDefault>
   );
 }

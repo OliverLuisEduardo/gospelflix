@@ -4,6 +4,7 @@ function useForm(valoresIniciais) {
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
+
     setValues({
       ...values,
       [chave]: valor,
