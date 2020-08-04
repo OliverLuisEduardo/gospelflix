@@ -4,6 +4,12 @@
   font-family: sans-serif;
 }
 
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --primary: #FFF000;
   --black: #000000;
@@ -195,8 +201,4 @@ input:focus {
   opacity: 1;
 }
 
-#root {
-  min-height: calc(100vh - var(--bodyPaddingTop));
-  display: flex;
-  flex-direction: column;
-}
+
