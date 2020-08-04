@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   color: white;
@@ -15,21 +14,22 @@
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
   --grayDark: #141414;
-  
 }
 
+html,
 body {
+  margin: 0;
+  padding: 0;
   background: #000;
-}
-
-main {
-  max-width: 900px;
-  margin: auto;
 }
 
 ul {
   padding: 0;
 }
+
+a {
+  color: inherit;
+} 
 
 img {
   max-width: 100%; 
@@ -193,4 +193,10 @@ input:focus {
 .card:hover .titulo,
 .card:hover:after {
   opacity: 1;
+}
+
+#root {
+  min-height: calc(100vh - var(--bodyPaddingTop));
+  display: flex;
+  flex-direction: column;
 }

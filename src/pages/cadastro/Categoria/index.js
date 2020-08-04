@@ -75,8 +75,7 @@ function CadastroCategoria() {
         </Button>
       </form>
       <br />
-      <br />
-      <br />
+
       {categorias.length === 0 && (
         <div>
           {}
@@ -96,6 +95,8 @@ function CadastroCategoria() {
         {' '}
         Ir para home
       </Link>
+      <br />
+      <br />
     </PageDefault>
   );
 }
